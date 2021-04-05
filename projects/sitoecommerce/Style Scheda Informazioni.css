@@ -1,0 +1,23 @@
+* {font-family: aleo; margin: 0; padding: 0;}
+
+body{background-image: url("https://s26913.pcdn.co/wp-content/uploads/2018/08/hardware-e1535121140229.jpg");}
+
+h2{text-align: center;}
+
+#bianco{background-color: white; opacity: 1; width: 60%;}
+
+h3{text-align: center;}
+
+ul{text-align: left; margin-left: 15px; list-style-type: square;}
+
+.Bottone{border-radius: 5px; background-color: Orange; text-decoration: none; width: 15%; margin-left: 25px;}
+
+#foto{ width:25%; border: 2px solid red; opacity: 1;}
+
+div#container1 {background-color: white; width: 900px; height: 585px; margin: 0 auto; border-color: transparent; padding: 20px 20px; }
+
+#prodotto{margin: 15px 0;}
+
+.float{float: left;}
+
+.floatnone{float: none}

@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <title>Carrello</title>
+    <style>
+    .btn-add, .btn-remove { cursor: pointer; }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="text-center">Carrello</h1>
+        <!-- Stack the columns on mobile by making one full-width and the other half-width -->
+        <div class="row">
+            <div class="col-12">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Nome</th>
+                            <th scope="col">Prezzo</th>
+                            <th scope="col">Quantità</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Mouse Logitech</td>
+                            <td>39.99&euro;</td>
+                            <td><i class="fas fa-minus-circle btn-remove"></i> <span>1</span> <i class="fas fa-plus-circle btn-add"></i></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="row">
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modale_esempio">
+                Ordina Ora
+            </button>
+            <!-- Modal -->
+            <div class="modal fade" id="modale_esempio" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Acquisto</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            Proseguire con il pagamento
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancella</button>
+                            <a href="pagamento.html"><button type="button" class="btn btn-primary">Paga</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+
+    $(document).ready(function() {
+        $('#selectColore').on('change', function() {
+            var class_color = this.value;
+            console.log(class_color);
+            if (class_color) {
+                $('.box-colore div').hide();
+                $('.box-colore div.' + class_color).show();
+            } else {
+                $('.box-colore div').show();
+            }
+        });
+
+        $(".btn-remove").click(function() {
+            var elem = $(this).parent().find("span");
+            var number_item = elem.text();
+            var new_number = number_item - 1;
+            if(new_number == 0){
+                new_number = 1;
+                // oppure se vogliamo cancellarlo
+                // $(this).parent().parent().hide();
+            }
+            elem.text(new_number);
+        });
+
+        $(".btn-add").click(function() {
+            var elem = $(this).parent().find("span");
+            var number_item = elem.text();
+            var new_number = parseInt(number_item) + 1;
+            elem.text(new_number);
+        });
+
+
+    });
+    </script>
+</body>
+
+</html>

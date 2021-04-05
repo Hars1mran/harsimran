@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+	<meta charset="UTF-8">
+
+	<head>
+		<title>Smash Re</title>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script>
+		$(document).ready(function(){
+		  // Add smooth scrolling to all links
+		  $("a").on('click', function(event) {
+
+		    // Make sure this.hash has a value before overriding default behavior
+		    if (this.hash !== "") {
+		      // Prevent default anchor click behavior
+		      event.preventDefault();
+
+		      // Store hash
+		      var hash = this.hash;
+
+		      // Using jQuery's animate() method to add smooth page scroll
+		      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+		      $('html, body').animate({
+		        scrollTop: $(hash).offset().top
+		      }, 600, function(){
+
+		        // Add hash (#) to URL when done scrolling (default click behavior)
+		        window.location.hash = hash;
+		      });
+		    } // End if
+		  });
+		});
+		</script>
+ <style>
+body, html, .main {
+  height: 100%;
+}
+
+section {
+  min-height: 100%;
+}
+</style>
+
+	<link rel="stylesheet" type="text/css" href="Home.css">
+	</head>
+
+	<body id="titolo">
+		<br>
+		<table>
+			<tr>
+				<th><a href="gioco.html"><span>DOWNLOAD THE GAME</span></th>
+				<th><a href="#ancora"><span>MORE INFO</span></a></th>
+				<th><a href="graficoincidenti.xlsx"><span>STATISTICS</span></a></th>
+			</tr>
+		</table>
+	 <br><br>
+	 <h2>Grazie a questo gioco il numero degli incidenti è praticamente dimezzato negli ultimi 10 anni</h2>
+
+	<img class="d" src="smash.png"></img>
+	<br><br><br><br><br><br><br><br><br><br><br><br>
+	<img class="t" src="out.png"></img>
+
+	<div>
+	<h1 id="ancora">Il SIMULATORE DEFINITIVO</h1>
+	<a href="#soos"><img class="spazio" src="game2.jpg"></img></a>
+	<p class="pro">Smash RE è una start-up nata nel 2003. Il videogioco invece è stato sviluppato e reso pubblico nel 2005 con l’idea di invogliare la gente che possiede una patente a migliorare il proprio stile di guida andando a simulare una vera esperienza di guida nelle città oppure per ragazzi che vogliono prendere la patente, perchè riescano ad avere uno stile di guida pulito e corretto.</p>
+	<br><br><br><br><br>
+	<h1 id="soos">PER AIUTARTI NELLA VITA DI TUTTI I GIORNI</h1>
+	<a href="#rip"><img class="spazio" src="game3.jpg"></img></a>
+	<p class="pro">L’obbiettivo del gioco è quello di raggiungere un determinato luogo nella città cercando di causare meno danni possibili alla vettura per ottenere il numero maggiore di punti.</p>
+	<br><br><br><br><br><br><br>
+	<h1 id="rip">COSTI DI PRODUZIONE</h1>
+	<br><br><br>
+	<a href="#titolo"><img class="spazio1" src="costi.png"></img></a>
+	<br><br><br><br><br><br>
+	</div>
+	<hr>
+	<p class="font">Instagram: </p><a style="margin-left: 48%;" href="https://www.instagram.com/smashre_official/?hl=it"><img style="width: 60px;" class="cen" src="insta.png"></img></a>
+	<br>
+</html>

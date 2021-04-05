@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="stile4.css" type="text/css">
+</head>
+<body>
+
+	<div class="float">
+	<figure>
+	<div class="border_black">
+		<img src="https://assets.razerzone.com/eeimages/products/25713/razer-ornata-chroma-gallery-07.png" id="margin2">
+	</div>
+		<figcaption id="tastiera2">
+		Tastiera Razer
+		</figcaption>
+	</figure>
+</div>
+	
+	<div class="float">
+	<figure>
+		<div class="border_black" id="sotto">
+			<img src="https://images-na.ssl-images-amazon.com/images/I/81lV6rV5-yL._SX466_.jpg" id="margin1">
+		</div>
+		<figcaption id="tastiera2">
+			Tastiera Trust
+		</figcaption>
+	</figure>
+	</div>
+</body>
+<div>
+</html>

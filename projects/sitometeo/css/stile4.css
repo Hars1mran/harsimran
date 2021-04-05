@@ -1,0 +1,15 @@
+*{margin:0; padding: 0}
+.border_black{border: 1pt solid black; width: 200px; height: 200px}
+.float{float: left;}
+#sotto{margin-top: 20px;}
+img{width: 100%;}
+body{background-color: white}
+figure{margin-left: 50px; margin-top: 20px}
+figcaption{margin-left: 55px; font-family: comic sans ms;}
+#tastiera2{margin-left: 40px;}
+div#container {background-color: white; width: 1000px; margin: 0 auto; border-color: transparent; padding: 20px 20px; background-color: rgb(128, 212, 255)}
+#margin1{margin-top: 42px;}
+#margin2{margin-top: 20px;}
+#margin3{margin-top: 18px;}
+#monitor2{margin-left: 30px}
+a{text-decoration: none; color: black}
